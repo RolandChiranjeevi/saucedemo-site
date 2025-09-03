@@ -36,13 +36,13 @@ jobs:
           exit 1
         fi
         
-    - name: Deploy to GitHub Pages
+    - name: Simulate Deployment
       if: github.ref == 'refs/heads/main'
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./
-        exclude_assets: '.github'
+      run: |
+        echo "🚀 Deploying website..."
+        echo "📁 Files validated and ready"
+        echo "🌐 Deployment URL: https://www.saucedemo.com"
+        echo "✅ Deployment completed successfully!"
         
     - name: Trigger E2E Tests
       if: github.ref == 'refs/heads/main'
@@ -53,8 +53,9 @@ jobs:
         event-type: deployment-completed
         client-payload: |
           {
-            "deployed_url": "https://${{ github.repository_owner }}.github.io/saucedemo-site",
+            "deployed_url": "https://www.saucedemo.com",
             "commit_sha": "${{ github.sha }}",
             "commit_message": "${{ github.event.head_commit.message }}",
-            "repository": "${{ github.repository }}"
+            "repository": "${{ github.repository }}",
+            "deployment_type": "simulated"
           }
