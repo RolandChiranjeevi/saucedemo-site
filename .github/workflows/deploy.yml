@@ -46,16 +46,21 @@ jobs:
         
     - name: Trigger E2E Tests Against Staging
       if: github.ref == 'refs/heads/main'
-      uses: peter-evans/repository-dispatch@v3
-      with:
-        token: ${{ secrets.DISPATCH_TOKEN }}
-        repository: ${{ secrets.TEST_REPO }}
-        event-type: deployment-completed
-        client-payload: |
-          {
-            "deployed_url": "https://${{ github.repository_owner }}.github.io/saucedemo-site",
-            "commit_sha": "${{ github.sha }}",
-            "commit_message": "${{ github.event.head_commit.message }}",
-            "repository": "${{ github.repository }}",
-            "environment": "staging"
-          }
+      run: |
+        echo "🚀 Attempting to trigger tests in: ${{ secrets.TEST_REPO }}"
+        echo "🔑 Using token: ${{ secrets.DISPATCH_TOKEN != '' && 'Token exists' || 'Token missing' }}"
+        
+        curl -X POST \
+          -H "Authorization: token ${{ secrets.DISPATCH_TOKEN }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          "https://api.github.com/repos/${{ secrets.TEST_REPO }}/dispatches" \
+          -d '{
+            "event_type": "deployment-completed",
+            "client_payload": {
+              "deployed_url": "https://${{ github.repository_owner }}.github.io/saucedemo-site",
+              "commit_sha": "${{ github.sha }}",
+              "commit_message": "${{ github.event.head_commit.message }}",
+              "repository": "${{ github.repository }}",
+              "environment": "staging"
+            }
+          }' || echo "❌ Webhook failed - check token permissions"
