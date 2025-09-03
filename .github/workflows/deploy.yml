@@ -11,13 +11,20 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+    - name: Manual checkout
+      run: |
+        echo "📥 Manual repository checkout..."
+        git clone https://github.com/RolandChiranjeevi/saucedemo-site.git .
+        echo "✅ Repository checked out manually"
       
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18'
+    - name: Manual Node.js setup
+      run: |
+        echo "🔧 Installing Node.js 18..."
+        curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+        sudo apt-get install -y nodejs
+        echo "✅ Node.js installed:"
+        node --version
+        npm --version
         
     - name: Verify files exist
       run: |
