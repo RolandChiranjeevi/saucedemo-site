@@ -36,15 +36,15 @@ jobs:
           exit 1
         fi
         
-    - name: Simulate Deployment
+    - name: Deploy to GitHub Pages (Staging)
       if: github.ref == 'refs/heads/main'
-      run: |
-        echo "🚀 Deploying website..."
-        echo "📁 Files validated and ready"
-        echo "🌐 Deployment URL: https://www.saucedemo.com"
-        echo "✅ Deployment completed successfully!"
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./
+        exclude_assets: '.github'
         
-    - name: Trigger E2E Tests
+    - name: Trigger E2E Tests Against Staging
       if: github.ref == 'refs/heads/main'
       uses: peter-evans/repository-dispatch@v3
       with:
@@ -53,9 +53,9 @@ jobs:
         event-type: deployment-completed
         client-payload: |
           {
-            "deployed_url": "https://www.saucedemo.com",
+            "deployed_url": "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}",
             "commit_sha": "${{ github.sha }}",
             "commit_message": "${{ github.event.head_commit.message }}",
             "repository": "${{ github.repository }}",
-            "deployment_type": "simulated"
+            "environment": "staging"
           }
