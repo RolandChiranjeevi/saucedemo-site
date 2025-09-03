@@ -43,3 +43,18 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./
         exclude_assets: '.github'
+        
+    - name: Trigger E2E Tests
+      if: github.ref == 'refs/heads/main'
+      uses: peter-evans/repository-dispatch@v3
+      with:
+        token: ${{ secrets.DISPATCH_TOKEN }}
+        repository: ${{ secrets.TEST_REPO }}
+        event-type: deployment-completed
+        client-payload: |
+          {
+            "deployed_url": "https://${{ github.repository_owner }}.github.io/saucedemo-site",
+            "commit_sha": "${{ github.sha }}",
+            "commit_message": "${{ github.event.head_commit.message }}",
+            "repository": "${{ github.repository }}"
+          }
