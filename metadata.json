@@ -1,11 +1,144 @@
 {
-  "title": "Swag Labs",
-  "description": "Sauce Labs Swag Labs app",
+  "title": "Mini Store \u2013 H\u00e5llbara & Handplockade Barnkl\u00e4der Secondhand",
+  "description": "Handla h\u00e5llbara och handplockade barnkl\u00e4der secondhand \u2013 enkelt, tryggt & med omtanke. Mini Store g\u00f6r det l\u00e4tt att fynda favoriterna du letar efter!",
   "keywords": "",
-  "og_tags": {},
-  "twitter_cards": {},
-  "canonical": "",
-  "language": "en",
-  "favicon": "https://www.saucedemo.com/favicon.ico",
-  "structured_data": []
+  "og_tags": {
+    "locale": "sv_SE",
+    "type": "website",
+    "title": "Mini Store \u2013 H\u00e5llbara & Handplockade Barnkl\u00e4der Secondhand",
+    "description": "Handla h\u00e5llbara och handplockade barnkl\u00e4der secondhand \u2013 enkelt, tryggt & med omtanke. Mini Store g\u00f6r det l\u00e4tt att fynda favoriterna du letar efter!",
+    "url": "https://mini-store.se/",
+    "site_name": "Mini Store",
+    "updated_time": "2025-08-13T07:40:47+02:00",
+    "image": "https://i0.wp.com/mini-store.se/wp-content/uploads/2025/04/ministore.png",
+    "image:secure_url": "https://i0.wp.com/mini-store.se/wp-content/uploads/2025/04/ministore.png",
+    "image:width": "1200",
+    "image:height": "630",
+    "image:alt": "barnkl\u00e4der",
+    "image:type": "image/png"
+  },
+  "twitter_cards": {
+    "card": "summary_large_image",
+    "title": "Mini Store \u2013 H\u00e5llbara & Handplockade Barnkl\u00e4der Secondhand",
+    "description": "Handla h\u00e5llbara och handplockade barnkl\u00e4der secondhand \u2013 enkelt, tryggt & med omtanke. Mini Store g\u00f6r det l\u00e4tt att fynda favoriterna du letar efter!",
+    "image": "https://i0.wp.com/mini-store.se/wp-content/uploads/2025/04/ministore.png",
+    "label1": "Skriven av",
+    "data1": "admin admin",
+    "label2": "L\u00e4stid",
+    "data2": "1 minut"
+  },
+  "canonical": "https://mini-store.se/",
+  "language": "sv-SE",
+  "favicon": "https://i0.wp.com/mini-store.se/wp-content/uploads/2024/12/cropped-mini1.png?fit=32%2C32&ssl=1",
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://mini-store.se/#organization",
+          "name": "Mini Store",
+          "url": "https://mini-store.se",
+          "email": "info@mini-store.se",
+          "logo": {
+            "@type": "ImageObject",
+            "@id": "https://mini-store.se/#logo",
+            "url": "https://mini-store.se/wp-content/uploads/2024/12/cropped-mini1.png",
+            "contentUrl": "https://mini-store.se/wp-content/uploads/2024/12/cropped-mini1.png",
+            "caption": "Mini Store",
+            "inLanguage": "sv-SE",
+            "width": "512",
+            "height": "512"
+          },
+          "description": "Mini Store \u00e4r en webbshop f\u00f6r second hand och preloved barnkl\u00e4der. H\u00e4r hittar du begagnade barnkl\u00e4der som \u00e4r handplockade och som g\u00e5tt igenom v\u00e5r superkoll \u2013 f\u00f6r att du ska k\u00e4nna dig trygg med vad du k\u00f6per. Vi tror p\u00e5 en enklare, sn\u00e4llare och mer h\u00e5llbar v\u00e4rld f\u00f6r v\u00e5ra barn, och vill g\u00f6ra det l\u00e4tt att v\u00e4lja h\u00e5llbart framf\u00f6r nytt. Hos oss shoppar du kvalitet med omtanke \u2013 b\u00e4ttre f\u00f6r b\u00e5de pl\u00e5nbok och planet.\r\nHos oss hittar du varum\u00e4rken som Polarn O. Pyret, Villervalla, Kappahl och andra favoriter.",
+          "legalName": "Ministore i Sverige"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://mini-store.se/#website",
+          "url": "https://mini-store.se",
+          "name": "Mini Store",
+          "alternateName": "Ministore",
+          "publisher": {
+            "@id": "https://mini-store.se/#organization"
+          },
+          "inLanguage": "sv-SE",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://mini-store.se/?s={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "ImageObject",
+          "@id": "https://mini-store.se/wp-content/uploads/2025/03/2.png",
+          "url": "https://mini-store.se/wp-content/uploads/2025/03/2.png",
+          "width": "200",
+          "height": "200",
+          "inLanguage": "sv-SE"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://mini-store.se/#webpage",
+          "url": "https://mini-store.se/",
+          "name": "Mini Store \u2013 H\u00e5llbara &amp; Handplockade Barnkl\u00e4der Secondhand",
+          "datePublished": "2024-12-26T17:06:42+01:00",
+          "dateModified": "2025-08-13T07:40:47+02:00",
+          "about": {
+            "@id": "https://mini-store.se/#organization"
+          },
+          "isPartOf": {
+            "@id": "https://mini-store.se/#website"
+          },
+          "primaryImageOfPage": {
+            "@id": "https://mini-store.se/wp-content/uploads/2025/03/2.png"
+          },
+          "inLanguage": "sv-SE"
+        },
+        {
+          "@type": "Person",
+          "@id": "https://mini-store.se/author/adminadmin/",
+          "name": "admin admin",
+          "url": "https://mini-store.se/author/adminadmin/",
+          "image": {
+            "@type": "ImageObject",
+            "@id": "https://secure.gravatar.com/avatar/db75b95b0a99e5463a70841c43ac0c32a83270023bbe6ffbbd0a0ef29d7e0346?s=96&amp;d=identicon&amp;r=g",
+            "url": "https://secure.gravatar.com/avatar/db75b95b0a99e5463a70841c43ac0c32a83270023bbe6ffbbd0a0ef29d7e0346?s=96&amp;d=identicon&amp;r=g",
+            "caption": "admin admin",
+            "inLanguage": "sv-SE"
+          },
+          "worksFor": {
+            "@id": "https://mini-store.se/#organization"
+          }
+        },
+        {
+          "@type": "Article",
+          "headline": "Mini Store \u2013 H\u00e5llbara &amp; Handplockade Barnkl\u00e4der Secondhand",
+          "keywords": "barnkl\u00e4der,begagnade barnkl\u00e4der,secondhand barnkl\u00e4der,h\u00e5llbara barnkl\u00e4der,ministore",
+          "datePublished": "2024-12-26T17:06:42+01:00",
+          "dateModified": "2025-08-13T07:40:47+02:00",
+          "author": {
+            "@id": "https://mini-store.se/author/adminadmin/",
+            "name": "admin admin"
+          },
+          "publisher": {
+            "@id": "https://mini-store.se/#organization"
+          },
+          "description": "Handla h\u00e5llbara och handplockade barnkl\u00e4der secondhand \u2013 enkelt, tryggt &amp; med omtanke. Mini Store g\u00f6r det l\u00e4tt att fynda favoriterna du letar efter!",
+          "name": "Mini Store \u2013 H\u00e5llbara &amp; Handplockade Barnkl\u00e4der Secondhand",
+          "@id": "https://mini-store.se/#richSnippet",
+          "isPartOf": {
+            "@id": "https://mini-store.se/#webpage"
+          },
+          "image": {
+            "@id": "https://mini-store.se/wp-content/uploads/2025/03/2.png"
+          },
+          "inLanguage": "sv-SE",
+          "mainEntityOfPage": {
+            "@id": "https://mini-store.se/#webpage"
+          }
+        }
+      ]
+    }
+  ]
 }

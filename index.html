@@ -1,104 +1,44 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html>
 <head>
+    <title>Mini Store - Test Site</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Store – Hållbara Barnkläder Secondhand</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-        }
-        .ci-cd-banner {
-            background: linear-gradient(45deg, #28a745, #20c997);
-            color: white;
-            padding: 15px;
-            text-align: center;
-            font-weight: bold;
-        }
-        .header {
-            background: #e2231a;
-            color: white;
-            padding: 40px;
-            text-align: center;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background: white;
-            margin-top: 20px;
-        }
-        .hero {
-            text-align: center;
-            padding: 60px 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            margin: 20px 0;
-        }
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin: 40px 0;
-        }
-        .feature {
-            background: #f8f9fa;
-            padding: 30px;
-            text-align: center;
-            border-radius: 10px;
-        }
-        .footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 40px 0;
-            margin-top: 40px;
-        }
-    </style>
 </head>
 <body>
-    <div class="ci-cd-banner">
-        🚀 CI/CD Pipeline Aktiv: Automatisk deployment och testning enabled!
+    <h1>🚀 Mini Store - CI/CD Test Site</h1>
+    
+    <div style="background: linear-gradient(45deg, #28a745, #20c997); color: white; padding: 20px; text-align: center; margin: 20px 0;">
+        <strong>✅ GitHub Pages Deployment Working!</strong>
     </div>
-
-    <header class="header">
-        <h1>Mini Store</h1>
-        <p>Hållbara & Handplockade Barnkläder Secondhand</p>
-    </header>
-
-    <div class="container">
-        <div class="hero">
-            <h2>Välkommen till Mini Store</h2>
-            <p>Din destination för hållbara barnkläder</p>
-        </div>
-
-        <div class="features">
-            <div class="feature">
-                <h3>🌱 Hållbart</h3>
-                <p>Secondhand barnkläder som är bra för miljön</p>
-            </div>
-            <div class="feature">
-                <h3>✋ Handplockade</h3>
-                <p>Kvalitetskontrollerade kläder</p>
-            </div>
-            <div class="feature">
-                <h3>🧪 Testmiljö</h3>
-                <p>Denna sida används för automatiserade tester</p>
-            </div>
-        </div>
+    
+    <h2>Välkommen till Mini Store</h2>
+    <p>Denna sida används för automatiserade CI/CD-tester med Selenium WebDriver.</p>
+    
+    <h3>🧪 Test Information:</h3>
+    <ul>
+        <li><strong>Site URL:</strong> https://rolandchiranjeevi.github.io/saucedemo-site</li>
+        <li><strong>Deployment:</strong> GitHub Pages från main branch</li>
+        <li><strong>Testing:</strong> Selenium WebDriver med Firefox/Chrome</li>
+        <li><strong>CI/CD:</strong> GitHub Actions pipeline</li>
+    </ul>
+    
+    <h3>🌱 Mini Store - Hållbara Barnkläder</h3>
+    <p>Secondhand barnkläder som är bra för miljön och din plånbok.</p>
+    
+    <div style="background: #f8f9fa; padding: 20px; margin: 20px 0; border-left: 4px solid #28a745;">
+        <h4>✅ Deployment Status</h4>
+        <p>Om du ser denna text betyder det att GitHub Pages fungerar korrekt!</p>
+        <p><small>Last updated: <span id="timestamp"></span></small></p>
     </div>
-
-    <footer class="footer">
-        <p>&copy; 2024 Mini Store - Automated CI/CD Testing Site</p>
+    
+    <footer style="margin-top: 40px; padding: 20px; background: #333; color: white; text-align: center;">
+        <p>&copy; 2024 Mini Store - CI/CD Testing Environment</p>
     </footer>
-
+    
     <script>
-        console.log('🎯 Mini Store - Test Environment Ready');
+        document.getElementById('timestamp').textContent = new Date().toLocaleString('sv-SE');
+        console.log('🎯 Mini Store Test Site Loaded Successfully');
     </script>
 </body>
 </html>
-<!-- Force Pages refresh -->
-<-v Wed Sep  3 14:34:06 CEST 2025 - New deployment trigger -->

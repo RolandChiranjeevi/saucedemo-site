@@ -36,13 +36,12 @@ jobs:
           exit 1
         fi
         
-    - name: Wait for GitHub Pages deployment
+    - name: Deployment completed
       if: github.ref == 'refs/heads/main'
       run: |
-        echo "⏳ GitHub Pages deployar automatiskt från main branch"
+        echo "✅ Validation klar - GitHub Pages deployar automatiskt från main branch"
         echo "🌐 Site kommer vara tillgänglig på: https://${{ github.repository_owner }}.github.io/saucedemo-site"
-        echo "⏱️  Väntar 30 sekunder för deployment..."
-        sleep 30
+        echo "📝 Deployment slutförd, triggar nu tester..."
         
     - name: Trigger E2E Tests Against Staging
       if: github.ref == 'refs/heads/main'

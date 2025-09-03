@@ -1,7 +1,7 @@
-# Website Clone: www.saucedemo.com
+# Website Clone: mini-store.se
 
-Extracted on: 2025-09-03 11:15:27
-Source URL: https://www.saucedemo.com/favicon.ico
+Extracted on: 2025-09-03 14:10:47
+Source URL: https://i0.wp.com/mini-store.se/wp-content/uploads/2024/12/cropped-mini1.png?fit=192%2C192&ssl=1
 
 ## Contents
 

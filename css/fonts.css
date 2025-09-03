@@ -1,8 +1,197 @@
-/* Font Family: DM Sans */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+/* Font Family: var(--wp--preset--font-family--domine) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--domine)+!important&display=swap');
 
-/* Font Family: Roboto */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* Font Family: var(--wp--preset--font-family--bricolage-grotesque) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--bricolage-grotesque)+!important&display=swap');
 
-/* Font Family: DM Mono */
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono&display=swap');
+/* Font Family: var(--wp--preset--font-family--plus-jakarta-sans) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--plus-jakarta-sans)+!important&display=swap');
+
+/* Font Family: SofiaPro */
+@import url('https://fonts.googleapis.com/css2?family=SofiaPro&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--source-serif-4) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--source-serif-4)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--arvo) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--arvo)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--fira-sans) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--fira-sans)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--rubik) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--rubik)+!important&display=swap');
+
+/* Font Family: Quicksand */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--sora) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--sora)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--gabarito) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--gabarito)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--dm-serif-display) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--dm-serif-display)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--noto-sans-mono) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--noto-sans-mono)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--cabin) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--cabin)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--dm-mono) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--dm-mono)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--epilogue) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--epilogue)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--alegreya) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--alegreya)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--nunito) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--nunito)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--lora) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--lora)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--figtree) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--figtree)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--inter) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--inter)+!important&display=swap');
+
+/* Font Family: Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--ibm-plex-mono) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--ibm-plex-mono)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--merriweather) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--merriweather)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--piazzolla) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--piazzolla)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--fjalla-one) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--fjalla-one)+!important&display=swap');
+
+/* Font Family: Arial */
+@import url('https://fonts.googleapis.com/css2?family=Arial&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--literata) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--literata)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--space-mono) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--space-mono)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--libre-franklin) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--libre-franklin)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--syne) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--syne)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--newsreader) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--newsreader)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--rufina) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--rufina)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--chivo) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--chivo)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--texturina) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--texturina)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--cormorant) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--cormorant)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--roboto-slab) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--roboto-slab)+!important&display=swap');
+
+/* Font Family: inherit */
+@import url('https://fonts.googleapis.com/css2?family=inherit&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--overpass) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--overpass)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--bodoni-moda) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--bodoni-moda)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--courier-prime) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--courier-prime)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--petrona) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--petrona)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--fraunces) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--fraunces)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--jost) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--jost)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--raleway) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--raleway)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--urbanist) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--urbanist)+!important&display=swap');
+
+/* Font Family: Jost */
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--libre-baskerville) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--libre-baskerville)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--open-sans) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--open-sans)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--source-sans-3) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--source-sans-3)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--fahkwang) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--fahkwang)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--pt-serif) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--pt-serif)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--ibm-plex-sans) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--ibm-plex-sans)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--dm-sans) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--dm-sans)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--instrument-serif) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--instrument-serif)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--roboto) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--roboto)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--josefin-sans) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--josefin-sans)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--commissioner) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--commissioner)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--montserrat) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--montserrat)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--eb-garamond) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--eb-garamond)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--playfair-display) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--playfair-display)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--poppins) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--poppins)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--ibarra-real-nova) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--ibarra-real-nova)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--albert-sans) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--albert-sans)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--work-sans) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--work-sans)+!important&display=swap');
+
+/* Font Family: var(--wp--preset--font-family--crimson-pro) !important */
+@import url('https://fonts.googleapis.com/css2?family=var(--wp--preset--font-family--crimson-pro)+!important&display=swap');
