@@ -1,44 +1,426 @@
 <!DOCTYPE html>
-<html>
+<html lang="sv">
 <head>
-    <title>Mini Store - Test Site</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Store – Hållbara Barnkläder Secondhand</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            background: #f8f9fa;
+        }
+
+        .ci-cd-banner {
+            background: linear-gradient(45deg, #28a745, #20c997);
+            color: white;
+            padding: 12px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 14px;
+            animation: pulse 3s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.85; }
+        }
+
+        .header {
+            background: linear-gradient(135deg, #e2231a, #ff4444);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(226, 35, 26, 0.3);
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            background: white;
+            padding: 60px 20px;
+            text-align: center;
+            margin: 30px 0;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .hero h2 {
+            font-size: 2.8rem;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #28a745, #20c997);
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+            margin: 0 10px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(40, 167, 69, 0.4);
+        }
+
+        .cta-button.secondary {
+            background: linear-gradient(45deg, #6c757d, #495057);
+            box-shadow: 0 4px 15px rgba(108, 117, 125, 0.3);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .feature {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+
+        .feature:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            border-color: #28a745;
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .feature h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .feature p {
+            color: #666;
+            line-height: 1.7;
+        }
+
+        .products-section {
+            background: white;
+            padding: 60px 0;
+            margin: 50px 0;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .product-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            border-color: #28a745;
+            box-shadow: 0 10px 30px rgba(40, 167, 69, 0.2);
+        }
+
+        .test-info {
+            background: linear-gradient(45deg, #fff3cd, #ffeaa7);
+            border: 2px solid #ffc107;
+            padding: 30px;
+            margin: 40px 0;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(255, 193, 7, 0.2);
+        }
+
+        .test-info h4 {
+            color: #856404;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .test-info p {
+            color: #856404;
+            margin: 8px 0;
+            font-weight: 500;
+        }
+
+        .footer {
+            background: #212529;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+            margin-top: 60px;
+        }
+
+        .footer p {
+            margin: 10px 0;
+            opacity: 0.9;
+        }
+
+        /* Navigation for testing */
+        .nav-menu {
+            background: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background: #28a745;
+            color: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 { font-size: 2.5rem; }
+            .hero h2 { font-size: 2rem; }
+            .features { grid-template-columns: 1fr; }
+            .nav-links { justify-content: space-around; gap: 10px; }
+            .nav-links a { padding: 8px 15px; font-size: 0.9rem; }
+        }
+    </style>
 </head>
 <body>
-    <h1>🚀 Mini Store - CI/CD Test Site</h1>
-    
-    <div style="background: linear-gradient(45deg, #28a745, #20c997); color: white; padding: 20px; text-align: center; margin: 20px 0;">
-        <strong>✅ GitHub Pages Deployment Working!</strong>
+    <div class="ci-cd-banner">
+        🚀 CI/CD Pipeline Aktiv - Automatisk deployment och Selenium-testning enabled!
     </div>
-    
-    <h2>Välkommen till Mini Store</h2>
-    <p>Denna sida används för automatiserade CI/CD-tester med Selenium WebDriver.</p>
-    
-    <h3>🧪 Test Information:</h3>
-    <ul>
-        <li><strong>Site URL:</strong> https://rolandchiranjeevi.github.io/saucedemo-site</li>
-        <li><strong>Deployment:</strong> GitHub Pages från main branch</li>
-        <li><strong>Testing:</strong> Selenium WebDriver med Firefox/Chrome</li>
-        <li><strong>CI/CD:</strong> GitHub Actions pipeline</li>
-    </ul>
-    
-    <h3>🌱 Mini Store - Hållbara Barnkläder</h3>
-    <p>Secondhand barnkläder som är bra för miljön och din plånbok.</p>
-    
-    <div style="background: #f8f9fa; padding: 20px; margin: 20px 0; border-left: 4px solid #28a745;">
-        <h4>✅ Deployment Status</h4>
-        <p>Om du ser denna text betyder det att GitHub Pages fungerar korrekt!</p>
-        <p><small>Last updated: <span id="timestamp"></span></small></p>
+
+    <nav class="nav-menu">
+        <div class="container">
+            <div class="nav-links">
+                <a href="#hem" id="nav-home">🏠 Hem</a>
+                <a href="#produkter" id="nav-products">👶 Produkter</a>
+                <a href="#om-oss" id="nav-about">ℹ️ Om oss</a>
+                <a href="#kontakt" id="nav-contact">📞 Kontakt</a>
+                <a href="#test-info" id="nav-test">🧪 Test Info</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header" id="hem">
+        <div class="container">
+            <h1>Mini Store</h1>
+            <p>Hållbara & Handplockade Barnkläder Secondhand</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <h2>Välkommen till Mini Store</h2>
+            <p>Din destination för hållbara, handplockade barnkläder i toppkvalitet. Bra för miljön, bra för din plånbok!</p>
+            <a href="#produkter" class="cta-button">Shoppa Nu</a>
+            <a href="#test-info" class="cta-button secondary">Test Information</a>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <span class="feature-icon">🌱</span>
+                <h3>100% Hållbart</h3>
+                <p>Secondhand barnkläder som minskar miljöpåverkan. Varje köp hjälper planeten och framtida generationer.</p>
+            </div>
+
+            <div class="feature">
+                <span class="feature-icon">✋</span>
+                <h3>Handplockade</h3>
+                <p>Alla våra kläder går igenom noggrann kvalitetskontroll. Bara det bästa för ditt barn.</p>
+            </div>
+
+            <div class="feature">
+                <span class="feature-icon">🚚</span>
+                <h3>Snabb Leverans</h3>
+                <p>Beställ idag och få dina favoritkläder levererade inom 2-3 arbetsdagar.</p>
+            </div>
+
+            <div class="feature">
+                <span class="feature-icon">💝</span>
+                <h3>Förmånliga Priser</h3>
+                <p>Kvalitetskläder till en bråkdel av nypriset. Mer kläder för pengarna!</p>
+            </div>
+
+            <div class="feature">
+                <span class="feature-icon">🔄</span>
+                <h3>Enkel Retur</h3>
+                <p>Inte nöjd? Vi erbjuder enkla byten och returer inom 30 dagar.</p>
+            </div>
+
+            <div class="feature">
+                <span class="feature-icon">🧪</span>
+                <h3>Test Environment</h3>
+                <p>Denna sida är en live-testmiljö för automatiserade Selenium WebDriver-tester och CI/CD-demonstrations.</p>
+            </div>
+        </div>
+
+        <section id="produkter" class="products-section">
+            <div class="container">
+                <h2 style="text-align: center; font-size: 2.5rem; color: #333; margin-bottom: 20px;">Våra Kategorier</h2>
+                <p style="text-align: center; color: #666; font-size: 1.2rem; margin-bottom: 40px;">Upptäck vårt handplockade sortiment</p>
+                
+                <div class="products-grid">
+                    <div class="product-card" id="category-baby">
+                        <span class="feature-icon">👶</span>
+                        <h3>Baby (0-2 år)</h3>
+                        <p>Mjuka och bekväma kläder för de allra minsta. Ekologiska material som är snälla mot känslig babyhud.</p>
+                    </div>
+                    <div class="product-card" id="category-child">
+                        <span class="feature-icon">🧒</span>
+                        <h3>Barn (2-10 år)</h3>
+                        <p>Lekfulla och praktiska kläder för aktiva barn. Tåliga material som klarar lek och bus.</p>
+                    </div>
+                    <div class="product-card" id="category-teen">
+                        <span class="feature-icon">👧</span>
+                        <h3>Tonåringar (10+ år)</h3>
+                        <p>Trendiga och stiliga kläder för ungdomar. Märkeskläder till fantastiska priser.</p>
+                    </div>
+                    <div class="product-card" id="category-accessories">
+                        <span class="feature-icon">🎒</span>
+                        <h3>Accessoarer</h3>
+                        <p>Väskor, skor, mössor och andra accessoarer som kompletterar garderoben perfekt.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="test-info" id="test-info">
+            <h4>🧪 Test & Development Information</h4>
+            <p><strong>Live Environment:</strong> Denna sida är automatiskt deployad via GitHub Pages från main branch</p>
+            <p><strong>CI/CD Status:</strong> Aktiv pipeline med GitHub Actions för deploy och Selenium-testning</p>
+            <p><strong>Test Framework:</strong> Selenium WebDriver med Firefox/Chrome fallback</p>
+            <p><strong>Target URL:</strong> <span id="current-url"></span></p>
+            <p><strong>Last Updated:</strong> <span id="timestamp"></span></p>
+            <p><strong>Page Load Time:</strong> <span id="load-time"></span>ms</p>
+        </div>
     </div>
-    
-    <footer style="margin-top: 40px; padding: 20px; background: #333; color: white; text-align: center;">
-        <p>&copy; 2024 Mini Store - CI/CD Testing Environment</p>
+
+    <footer class="footer" id="kontakt">
+        <div class="container">
+            <h3>Mini Store</h3>
+            <p>&copy; 2024 Mini Store - Hållbara Barnkläder Secondhand</p>
+            <p>🔄 Automated CI/CD | 🧪 Selenium Testing | 🚀 GitHub Actions Pipeline</p>
+            <p>📧 Kontakt: info@mini-store.se | 📞 Tel: 08-123 456 78</p>
+        </div>
     </footer>
-    
+
     <script>
-        document.getElementById('timestamp').textContent = new Date().toLocaleString('sv-SE');
-        console.log('🎯 Mini Store Test Site Loaded Successfully');
+        // Set dynamic content
+        const loadStartTime = performance.now();
+        
+        window.addEventListener('load', function() {
+            const loadTime = Math.round(performance.now() - loadStartTime);
+            document.getElementById('timestamp').textContent = new Date().toLocaleString('sv-SE');
+            document.getElementById('current-url').textContent = window.location.href;
+            document.getElementById('load-time').textContent = loadTime;
+        });
+
+        // Console info for Selenium testing
+        console.log('🎯 Mini Store - Test Environment Ready');
+        console.log('📊 Page loaded at:', new Date().toISOString());
+        console.log('🔗 URL:', window.location.href);
+        console.log('🧪 Available test elements:', {
+            navigation: document.querySelectorAll('.nav-links a').length,
+            features: document.querySelectorAll('.feature').length,
+            products: document.querySelectorAll('.product-card').length,
+            buttons: document.querySelectorAll('.cta-button').length
+        });
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add some interactivity for testing
+        document.querySelectorAll('.product-card').forEach(card => {
+            card.addEventListener('click', function() {
+                console.log('Product card clicked:', this.id);
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    this.style.transform = '';
+                }, 150);
+            });
+        });
     </script>
 </body>
 </html>
